@@ -1,0 +1,18 @@
+$TTL 604800
+@ IN SOA dns1.admweb.com.br. root.admweb.com.br. (
+1 ; serial
+604800    ; Refresh
+86400      ; Retry
+2419200  ; Expire
+604800    ; Negative cache TTL
+)
+
+@  IN  NS   dns1.admweb.com.br.
+@  IN  NS   dns2.admweb.com.br.
+@  IN  MX 10 mail.admweb.com.br.
+www IN A 172.17.0.4
+dns1 IN A 172.17.0.2
+dns2 IN A 172.17.0.3
+mail IN A 172.17.0.5
+www  IN AAAA 2600:1408:8c00:29e::356e
+mobile IN CNAME  www
